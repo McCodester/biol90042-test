@@ -10,12 +10,13 @@ dosage %>%
   ggplot(aes(x = dose_mg, y = weight_lost_g, colour = mouse_strain)) +
   geom_point() +
   # nicer colour palette
-  scale_colour_manual(values = c("#ab2929", "#73b7bd", "#ccd65c")) +
+  scale_colour_manual(values = c("red", "blue", "green")) +
   # theme and labels
   theme_classic() +
   labs(
     x = "Drug dosage (mg)",
     y = "Weight lost (mg)",
     colour = "Mouse strain",
-    title = "Relationship between drug dosage and weight lost"
+    title = "Relationship between drug dosage and weight lost scatterplot"
   )
+#this comment is a change, I want to commit it
